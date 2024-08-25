@@ -3,7 +3,13 @@
     "version": "1.0.0",
     "description": "Technical task for Senior Automation QA position in Moralis",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "format": "prettier --write .",
+        "lint": "npx eslint . --ext .ts --color --fix --quiet",
+        "check-all": "npm run format && npm run lint",
+        "test": "npx playwright test",
+        "test:ui:mode": "npx playwright test --ui"
+    },
     "keywords": [
         "Playwright",
         "TypeScript",
