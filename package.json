@@ -1,31 +1,31 @@
 {
-  "name": "moralis-project",
-  "version": "1.0.0",
-  "description": "Technical task for Senior Automation QA position in Moralis",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [
-    "Playwright",
-    "TypeScript",
-    "NodeJS"
-  ],
-  "author": "Ihor Solopii <ihorsolopii@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "@playwright/test": "^1.46.1",
-    "dotenv": "^16.4.5"
-  },
-  "devDependencies": {
-    "@types/node": "^22.5.0",
-    "@typescript-eslint/eslint-plugin": "^8.2.0",
-    "@typescript-eslint/parser": "^8.2.0",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-playwright": "^1.6.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
-  }
+    "name": "moralis-project",
+    "version": "1.0.0",
+    "description": "Technical task for Senior Automation QA position in Moralis",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [
+        "Playwright",
+        "TypeScript",
+        "NodeJS"
+    ],
+    "author": "Ihor Solopii <ihorsolopii@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "@playwright/test": "^1.46.1",
+        "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+        "@types/node": "^22.5.0",
+        "@typescript-eslint/eslint-plugin": "^8.2.0",
+        "@typescript-eslint/parser": "^8.2.0",
+        "eslint": "^8.57.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-playwright": "^1.6.2",
+        "eslint-plugin-prettier": "^5.2.1",
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.4"
+    }
 }
