@@ -4,11 +4,13 @@
     "description": "Technical task for Senior Automation QA position in Moralis",
     "main": "index.js",
     "scripts": {
+        "postinstall": "npx playwright install",
         "format": "prettier --write .",
         "lint": "npx eslint . --ext .ts --color --fix --quiet",
         "check-all": "npm run format && npm run lint",
         "test": "npx playwright test",
-        "test:ui:mode": "npx playwright test --ui"
+        "test:ui:mode": "npx playwright test --ui",
+        "prepare": "husky"
     },
     "keywords": [
         "Playwright",
@@ -31,6 +33,7 @@
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-playwright": "^1.6.2",
         "eslint-plugin-prettier": "^5.2.1",
+        "husky": "^9.1.5",
         "prettier": "^3.3.3",
         "typescript": "^5.5.4"
     }
