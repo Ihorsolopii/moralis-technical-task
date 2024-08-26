@@ -1,12 +1,6 @@
+import 'dotenv/config';
 import { defineConfig, devices } from '@playwright/test';
-import { config } from 'dotenv';
-
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-
-config();
+import { env } from './src/env';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -46,7 +40,7 @@ export default defineConfig({
     actionTimeout: 15_000,
 
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: process.env.FRONTEND_URL,
+    baseURL: env.FRONTEND_URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
@@ -65,6 +59,9 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         viewport: { width: 1280, height: 720 },
+        launchOptions: {
+          slowMo: 500,
+        },
       },
     },
 
