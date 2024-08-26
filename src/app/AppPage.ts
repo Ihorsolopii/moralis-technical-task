@@ -12,9 +12,13 @@ export abstract class AppPage extends AppComponent {
   /**
    * Opens the page in the browser and expectLoaded should pass
    */
-  @step()
+  @step('Open Login page and Accept all cookies')
   async open(path?: string): Promise<void> {
     await this.page.goto(path ?? this.pagePath);
     await this.expectLoaded();
+
+    await this.page.addLocatorHandler(this.page.locator('#cookiescript_injected'), async () => {
+      await this.page.getByRole('button', { name: 'Accept all' }).click();
+    });
   }
 }
