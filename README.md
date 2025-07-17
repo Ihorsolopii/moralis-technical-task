@@ -1,4 +1,4 @@
-## Test automation framework for Moralis Application
+## Test automation framework for Web Application
 
 ### Prerequisites:
 
@@ -40,8 +40,8 @@ This config is also personal, so you could modify it as you like.
 
 #### Setting proper env variables
 
-- `FRONTEND_URL` defines frontend URL. Defaults to `https://admin.moralis.io`
-- `BACKEND_URL` defines backend URL. Defaults to `https://api.dashboard.moralis.io`
+- `FRONTEND_URL` defines frontend URL. Defaults to `https://demo.com`
+- `BACKEND_URL` defines backend URL. Defaults to `https://demo.como`
 - `USER_EMAIL` defines user email
 - `USER_PASSWORD` defines user password
 
